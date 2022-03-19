@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap');
+
+*,*::before,*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    /* ### Primary */
+
+--clr-primary-soft-red: hsl(7, 99%, 70%);
+--clr-primary-yellow: hsl(51, 100%, 49%);
+--clr-primary-cyan-200 : hsl(167, 40%, 24%); /*(graphic design text)*/
+--clr-primary-dark-blue : hsl(198, 62%, 26%); /*(photography text)*/
+--clr-primary-cyan-100 : hsl(168, 34%, 41%); /*(footer)*/
+
+/* ### Neutral */
+
+--clr-neutral-desaturated-blue-400: hsl(212, 27%, 19%);
+--clr-neutral-grayish-blue-300: hsl(213, 9%, 39%);
+--clr-neutral-grayish-blue-200: hsl(232, 10%, 55%);
+--clr-neutral-grayish-blue-100: hsl(210, 4%, 67%);
+--clr-neutral-000: hsl(0, 0%, 100%);
+
+/* font size */
+--fs: 18px;
+/* font family */
+--ff-body: 'Barlow', sans-serif;
+--ff-title: 'Fraunces', serif;
+}
+html{ font-size: var(--fs); }
+body{
+     font-family: var(--ff-body);
+      overflow-x: hidden;
+}
+/* utilities */
+.grid-class{ display: grid;}
+.flex-class{ display: flex;}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+header{ font-family: var(--ff-title);}
+/* landing page section styling */
+.landing-section-wrapper{
+    background: url(images/mobile/image-header.jpg) no-repeat;
+    background-size: 100%;
+    min-height: 100vh;
+}
+.nav-bar{
+    display: inline-block;
+}
+.hamburger-menu__icon{
+    background: transparent;
+    border: none;
+}
+@media screen and (max-width: 75em) {
+    .desktop-view{
+        display: none;
+    }
+    
+}
+@media screen and (min-width: 75em) {
+    .mobile-view{
+        display: none;
+    }
+    .landing-section-wrapper{
+        background: url(images/desktop/image-header.jpg) no-repeat;
+    }
+}
+/* sections styling */
+@media screen and (max-width: 75em) {
+    .section-img{
+        width: 100vw;
+    }  
+}
+
+footer{
+    background-color: var(--clr-primary-cyan-100);
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
