@@ -17,26 +17,26 @@
   <main>
     <div class="landing-section-wrapper">
       <div class="mobile-view">
-      <div class="hamburger-menu">
+        <a class="logo-main" href="#"><span><img src="images/logo.svg" alt="Sunnyside home"></span></a>
         <div class="nav-bar">
-          <a href="#"><span><img src="images/logo.svg" alt="Sunnyside home"></span></a>
-          <button class="hamburger-menu__icon">☰</button>
+          <button class="hamburger-menu__icon"><img src="images/icon-hamburger.svg" alt=""></button>
           <nav class="nav-bar__mobile dsply-none">
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Projects</a>
-            <a href="#">Contact</a>
+            <ul class="nav-bar__mobile-list text-alg-cntr">
+              <li class="opacity-half"><a href="#">About</a></li>
+              <li class="opacity-half"><a href="#">Services</a></li>
+              <li class="opacity-half"><a href="#">Projects</a></li>
+              <li class="contact ff-fraunces"><a href="#">CONTACT</a></li>
+            </ul>
           </nav>
         </div>
       </div>
-    </div>
     <div class="desktop-view">
-      <nav class="nav-bar-desktop">
-        <a href="#"><span><img src="images/logo.svg" alt="Sunnyside home"></span></a>
+      <a class="logo-main" href="#"><span><img src="images/logo.svg" alt="Sunnyside home"></span></a>
+      <nav class="nav-bar nav-bar__desktop">
         <a href="#">About</a>
         <a href="#">Services</a>
         <a href="#">Projects</a>
-        <a href="#">Contact</a>
+        <a class="contact" href="#">CONTACTt</a>
       </nav>
     </div>
     <header><h1 class="hero-title">WE ARE CREATIVES</h1></header>
@@ -44,18 +44,19 @@
     </div>
 
     <section class="features grid-class">
+      
       <div class="img-section">
         <figure class="mobile-view"><img class="section-img" src="images/mobile/image-transform.jpg" alt="transform"></figure>
         <figure class="desktop-view"><img class="section-img" src="images/desktop/image-transform.jpg" alt="transform"></figure>
       </div>
 
-      <section aria-labelledby="transform-your-brand-title">
-          <header>
-            <h2 id="transform-your-brand-title">Transform your brand</h2>
+      <section aria-labelledby="transform-your-brand-title" class="grid-class usp gap section1">
+          <header class="title-styling">
+            <h2 id="transform-your-brand-title" >Transform your brand</h2>
           </header>
-          <p>We are a full-service creative agency specializing in helping brands grow fast. 
+          <p class="para-width">We are a full-service creative agency specializing in helping brands grow fast. 
             Engage your clients through compelling visuals that do most of the marketing for you.</p>
-          <a href="#">Learn more</a>
+          <a href="#" class="ff-fraunces cta">Learn more</a>
       </section>
 
       <div class="img-section">
@@ -63,32 +64,32 @@
         <figure class="desktop-view"><img class="section-img" src="images/desktop/image-stand-out.jpg" alt="stand out"></figure>
       </div>
 
-        <section aria-labelledby="stand-out-title">
-          <header>
+        <section aria-labelledby="stand-out-title" class="grid-class usp gap section2">
+          <header class="title-styling">
             <h2 id="stand-out-title">Stand out to the right audience</h2>
           </header>
-          <p>Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters,
+          <p class="para-width ">Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters,
             we’ll build and extend your brand in digital places. </p>
-          <a href="#">Learn more</a>
+          <a href="#" class="ff-fraunces cta">Learn more</a>
         </section>
     
 
-    <section class="work-field graphic-design-section flex-class" aria-labelledby="graphic-design-title">
+    <section class="work-field graphic-design-section flex-class section3" aria-labelledby="graphic-design-title">
         <div class="work-field__content">
           <header>
-          <h2 id="graphic-design-title text-alg-cntr">Graphic design</h2>
+          <h2 id="graphic-design-title">Graphic design</h2>
         </header>
-        <p class="graphic-design-section__text text-alg-cntr">Great design makes you memorable. We deliver artwork that underscores your brand message
+        <p class="graphic-design-section__text text-alg-cntr hrztl-cntr">Great design makes you memorable. We deliver artwork that underscores your brand message
           and captures potential clients’ attention.</p>
         </div>
       </section>
 
-        <section class="work-field photography-section flex-class" aria-labelledby="photography-title">
+        <section class="work-field photography-section flex-class section4" aria-labelledby="photography-title">
           <div class="work-field__content">
             <header>
-              <h2 id="photography-title text-alg-cntr">Photography</h2>
+              <h2 id="photography-title">Photography</h2>
             </header>
-            <p class="photography-section__text text-alg-cntr">Increase your credibility by getting the most stunning, 
+            <p class="photography-section__text text-alg-cntr hrztl-cntr">Increase your credibility by getting the most stunning, 
               high-quality photos that improve your business image.
             </p>
           </div>
@@ -97,7 +98,7 @@
 
     <section class="testimonial-section" aria-labelledby="client-testimonial-title">
       <header>
-        <h2 id="client-testimonial-title" class="testimonial-title text-alg-cntr">CLIENT TESTIMONIALS</h2>
+        <h2 id="client-testimonial-title" class="testimonial-title text-alg-cntr opacity-half">CLIENT TESTIMONIALS</h2>
       </header>
 
       <div class="testimonials grid-class">
@@ -105,8 +106,8 @@
           <figure><img class="testimonial__avatar" src="images/image-emily.jpg" alt="emily avatar"></figure>
            <p class="testimonial__exp text-alg-cntr">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>  
            <div class="testimonial__info">
-            <p class="testimonial__name text-alg-cntr">Emily R.</p> 
-            <span class="testimonial__profession">Marketing Director</span>
+            <p class="testimonial__name text-alg-cntr ff-fraunces">Emily R.</p> 
+            <span class="testimonial__profession opacity-half">Marketing Director</span>
            </div>
         </div>
             <div class="testimonial testimonial2 grid-class">
@@ -114,16 +115,16 @@
               <p class="testimonial__exp text-alg-cntr">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a
                 satisfying and enjoyable experience.</p> 
                 <div class="testimonial__info">
-                  <p class="testimonial__name text-alg-cntr">Thomas S.</p> 
-                <span class="testimonial__profession">Chief Operating Officer</span>
+                  <p class="testimonial__name text-alg-cntr ff-fraunces">Thomas S.</p> 
+                <span class="testimonial__profession opacity-half">Chief Operating Officer</span>
                 </div>
             </div>
         <div class="testimonial testimonial3 grid-class">
           <figure><img class="testimonial__avatar" src="images/image-jennie.jpg" alt="jennie avatar"></figure>
           <p class="testimonial__exp text-alg-cntr">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p> 
           <div class="testimonial__info">
-            <p class="testimonial__name text-alg-cntr">Jennie F.</p> 
-            <span class="testimonial__profession">Business Owner</span> 
+            <p class="testimonial__name text-alg-cntr ff-fraunces">Jennie F.</p> 
+            <span class="testimonial__profession opacity-half">Business Owner</span> 
           </div>
         </div>
       </div>
@@ -147,24 +148,25 @@
     </div>
   </main>
 
-<footer>
-  <div class="footer-logo"><img src="images/logo.svg" alt="Sunnyside footer"></div>
+<footer class="flex-class">
+  <figure class="footer-logo"><img src="images/logo-footer.svg" alt="Sunnyside footer"></figure>
+     <div class="footer__contact">
       <a href="#">About</a>
       <a href="#"> Services</a>
       <a href="#">Projects</a>
+     </div>
       <div class="footer__social-icons">
-        <i><a href="#"><img src="images/icon-facebook.svg" alt=""></a></i>
-      <i><a href="#"><img src="images/icon-instagram.svg" alt=""></a></i>
-      <i><a href="#"><img src="images/icon-twitter.svg" alt=""></a></i>
-      <i><a href="#"><img src="images/icon-pinterest.svg" alt=""></a></i>
+        <a href="#"><img src="images/icon-facebook.svg" alt=""></a>
+        <a href="#"><img src="images/icon-instagram.svg" alt=""></a>
+        <a href="#"><img src="images/icon-twitter.svg" alt=""></a>
+        <a href="#"><img src="images/icon-pinterest.svg" alt=""></a>
       </div>
-      <div class="attribution text-alg-cntr">
+      <div class="attribution text-alg-cntr ff-fraunces">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
         Coded by <a href="https://www.frontendmentor.io/profile/Muralidhar22" target="_blank">Muralidhar</a>.&nbsp;|&nbsp;<a href="https://github.com/Muralidhar22/Sunnyside-landing-page-fem" target="_blank">Repo link</a>
       </div>
 </footer>
   
-
 <script src="script.js"></script>
 </body>
 </html>

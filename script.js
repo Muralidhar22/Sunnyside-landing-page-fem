@@ -1,14 +1,15 @@
 const menu = document.querySelector(".hamburger-menu__icon");
-const navBar = document.querySelector(".nav-bar__mobile")
-console.log(menu)
-console.log(navBar.style.display === "none")
+const navMenu = document.querySelector(".nav-bar__mobile")
+
 menu.addEventListener("click",displayMenu)
+
+
 function displayMenu() {
-    
-    console.log(x)
-    if (x.style.display !== "none") {
-      x.classList.add("dsply-none")
-    } else {
-      x.classList.remove("dsply-none");
-    }
+  let navbar = getComputedStyle(navMenu)
+  if(navbar.display === "none"){
+    navMenu.classList.remove("dsply-none")
   }
+  else{
+    navMenu.classList.add("dsply-none")
+  }
+}
